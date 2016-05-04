@@ -39,7 +39,7 @@ AudioModel.prototype.registerAudio = function(params, success, fail) {
   self.init([], success, fail);
   var db = self.db();
   var logger = self.logger();
-  var sql = db.prepare('INSERT INTO Audios (fielname, treeId) VALUES (:filename, :treeId)');
+  var sql = db.prepare('INSERT INTO Audios (filename, treeId) VALUES (:filename, :treeId)');
   db.query(sql({filename: params.filename, treeId: params.treeId}))
     .on('result', function(res) {
       res.on('data', function onRow(row) {
