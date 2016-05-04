@@ -32,7 +32,7 @@ Model.prototype.db = function() {
 
   //Initiate, connect to DB
   db.connect({
-    host: 'cmpe235.ceuvpllmlap3.us-west-2.rds.amazonaws.com',
+    host: 'cmpe235.c8l7mes2bkmm.us-east-1.rds.amazonaws.com',
     port: 3306,
     user: 'cmpe235',
     password: 'testing123',
